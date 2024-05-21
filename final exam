@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.punchng.com/wp-content/uploads/2023/07/24084806/Twitter-new-logo.jpeg" alt="Twitter Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#" class="signup-button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Happening now</h1>
+            <p><b>Join today.</b></p>
+</main>
+ <main>
+        <section class="left-sidebar">
+            <!-- Left sidebar content -->
+        </section>
+        <section class="main-content">
+            <!-- Main content, e.g., tweets -->
+        </section>
+        <section class="right-sidebar">
+            <!-- Right sidebar content -->
+        </section>
+    </main>
+        </section>
+
+        <section class="signup-form">
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+</body>
+</html>
+
+css code:
+body {
+    font-family:  Helvetica Neue, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.left-sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+main.right-sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+main.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a.signup-button {
+    background-color: black;
+    color: #1da1f2;
+    padding: 10px 20px;
+    border: 2px solid; 
+    border-color: gray;
+    border-radius: 20px;
+    
+}
+
+nav ul li a.signup-button:hover {
+    background-color: #000033;
+}
+main {
+    text-align: left;
+    padding: 30px;
+}
+
+.signup-form{
+text-align: center;
+margin:20px;
+padding-left:10px;
+display:flex;
+
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: white;
+    align-text: left;
+
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: white;
+}
+
+
+.signup-form form {
+    display: inline-block;
+    text-align: left;
+
+}
+
+.signup-form input {
+    display: block;
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    width: 320px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #1da1f2;;
+    background-color: black;
+    border-color: gray;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.signup-form button:hover {
+    background-color: #000033;
+}
+
